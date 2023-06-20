@@ -1,7 +1,1 @@
-abc
-C
-D
-E
-S
-S
-s
+blank
