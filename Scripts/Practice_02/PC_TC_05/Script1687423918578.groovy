@@ -17,17 +17,21 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser('https://kiemthutudong.com/blog')
+'Open browser'
+WebUI.openBrowser(GlobalVariable.G_URL)
 
-WebUI.click(findTestObject('Button/Demo_TC1/btn_createNewAccount'))
+'Click forgot password'
+WebUI.click(findTestObject('Object Repository/Link/P2_TC/lnk_forgot_password'))
 
-WebUI.setText(findTestObject('Label/Demo_TC1/lbl_userName'), 'test_t3')
+'Verify Cancel button'
+WebUI.verifyElementClickable(findTestObject('Object Repository/Button/P2_TC/btn_cancel'))
 
-WebUI.setText(findTestObject('Label/Demo_TC1/lbl_email'), 'test_t3@gmail.com')
+'Verify Reset password button'
+WebUI.verifyElementClickable(findTestObject('Object Repository/Button/P2_TC/btn_reset_password'))
 
-WebUI.click(findTestObject('Button/Demo_TC1/btn_register'))
+'Click cancel button'
+WebUI.click(findTestObject('Object Repository/Button/P2_TC/btn_cancel'))
 
-WebUI.verifyElementVisible(findTestObject('Label/Demo_TC1/msg_regisCompleted'))
-
-WebUI.closeBrowser()
-
+'Verify URL'
+String url = WebUI.getUrl()
+WebUI.verifyEqual(url, 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login')

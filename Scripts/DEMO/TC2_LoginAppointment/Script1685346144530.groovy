@@ -19,19 +19,19 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('https://katalon-demo-cura.herokuapp.com/profile.php#login')
 
-WebUI.setText(findTestObject('Label/TC2/lbl_userName'), 'John Doe')
+WebUI.setText(findTestObject('Label/Demo_TC2/lbl_userName'), 'John Doe')
 
-WebUI.setText(findTestObject('Label/TC2/lbl_passWord'), 'ThisIsNotAPassword')
+WebUI.setText(findTestObject('Label/Demo_TC2/lbl_passWord'), 'ThisIsNotAPassword')
 
-WebUI.click(findTestObject('Button/TC2/btn_login'))
+WebUI.click(findTestObject('Button/Demo_TC2/btn_login'))
 
-WebUI.click(findTestObject('DropDownList/TC2/lbl_visitDate'), FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('DropDownList/Demo_TC2/lbl_visitDate'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('DropDownList/TC2/ddl_calendar'))
+WebUI.click(findTestObject('DropDownList/Demo_TC2/ddl_calendar'))
 
-WebUI.setText(findTestObject('Text/TC2/txt_comment'), 'Make Appointment')
+WebUI.setText(findTestObject('Text/Demo_TC2/txt_comment'), 'Make Appointment')
 
-WebUI.verifyElementVisible(findTestObject('Button/TC2/btn_bookAppointment'))
+WebUI.verifyElementVisible(findTestObject('Button/Demo_TC2/btn_bookAppointment'))
 
-WebUI.click(findTestObject('Button/TC2/btn_bookAppointment'))
+WebUI.click(findTestObject('Button/Demo_TC2/btn_bookAppointment'))
 
