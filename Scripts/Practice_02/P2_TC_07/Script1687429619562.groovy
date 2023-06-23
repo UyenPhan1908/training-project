@@ -17,17 +17,18 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser('https://kiemthutudong.com/blog')
+'Open browser'
+WebUI.openBrowser(GlobalVariable.G_URL)
 
-WebUI.click(findTestObject('Button/Demo_TC1/btn_createNewAccount'))
+'Input username'
+WebUI.setText(findTestObject('Object Repository/Text/P2_TC/txt_username'), 'Admin')
 
-WebUI.setText(findTestObject('Label/Demo_TC1/lbl_userName'), 'test_t3')
+'Input password'
+WebUI.setText(findTestObject('Object Repository/Text/P2_TC/txt_password'), 'admin123')
 
-WebUI.setText(findTestObject('Label/Demo_TC1/lbl_email'), 'test_t3@gmail.com')
+'Click Login button'
+WebUI.click(findTestObject('Object Repository/Button/P2_TC/btn_login'))
 
-WebUI.click(findTestObject('Button/Demo_TC1/btn_register'))
-
-WebUI.verifyElementVisible(findTestObject('Label/Demo_TC1/msg_regisCompleted'))
-
-WebUI.closeBrowser()
-
+'Veriry dashboard'
+String dashbroad = WebUI.getAttribute(findTestObject('Object Repository/Button/P2_TC/btn_dashboard'), 'class')
+WebUI.verifyEqual(dashbroad, 'oxd-main-menu-item active')

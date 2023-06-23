@@ -17,17 +17,16 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser('https://kiemthutudong.com/blog')
+'Open browser'
+WebUI.openBrowser(GlobalVariable.G_URL)
 
-WebUI.click(findTestObject('Button/Demo_TC1/btn_createNewAccount'))
+'Click orange HRM inc'
+WebUI.click(findTestObject('Object Repository/Link/P2_TC/lnk_orangeHRM'))
 
-WebUI.setText(findTestObject('Label/Demo_TC1/lbl_userName'), 'test_t3')
+'Switch url'
+WebUI.switchToWindowTitle('OrangeHRM HR Software | Free & Open Source HR Software | HRMS | HRIS | OrangeHRM')
 
-WebUI.setText(findTestObject('Label/Demo_TC1/lbl_email'), 'test_t3@gmail.com')
-
-WebUI.click(findTestObject('Button/Demo_TC1/btn_register'))
-
-WebUI.verifyElementVisible(findTestObject('Label/Demo_TC1/msg_regisCompleted'))
-
-WebUI.closeBrowser()
+'Verify url'
+String url = WebUI.getUrl()
+WebUI.verifyEqual(url, 'https://www.orangehrm.com/')
 
