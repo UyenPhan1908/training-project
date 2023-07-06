@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalVariableEntities>
+   <description></description>
+   <name>Practice_03_TC02</name>
+   <tag></tag>
+   <defaultProfile>false</defaultProfile>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'https://atlassian.design/components/tooltip/examples'</initValue>
+      <name>L_URL</name>
+   </GlobalVariableEntity>
+</GlobalVariableEntities>

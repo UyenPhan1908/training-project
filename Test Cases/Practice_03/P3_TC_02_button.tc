@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>P2_TC_05</name>
+   <name>P3_TC_02_button</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>f8600256-2f77-4422-b3f8-bbfe047118e5</testCaseGuid>
+   <testCaseGuid>8253111d-05b3-4d9a-b958-7e1b5f4bf62b</testCaseGuid>
 </TestCaseEntity>

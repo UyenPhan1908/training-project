@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>P2_TC_05</name>
+   <name>P3_TC_03_checkbox</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>f8600256-2f77-4422-b3f8-bbfe047118e5</testCaseGuid>
+   <testCaseGuid>07f4c56f-340d-48aa-b50c-c9b07d39bef4</testCaseGuid>
 </TestCaseEntity>

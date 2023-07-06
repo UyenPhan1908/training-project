@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalVariableEntities>
+   <description></description>
+   <name>Practice_03_TC03</name>
+   <tag></tag>
+   <defaultProfile>false</defaultProfile>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'https://automationfc.github.io/multiple-fields/'</initValue>
+      <name>X_URL</name>
+   </GlobalVariableEntity>
+</GlobalVariableEntities>
